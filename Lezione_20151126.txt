@@ -1,20 +1,19 @@
-Array
-
-vettori
+Array (vettori semplici, monodimensionali
 
 argomenti passati al metodo main
 
-elenco allievi
-
-
+array elenco allievi
 scorro elenco allievi utilizzando un ciclo for
 
+gestione base di possibili eccezioni: 
+	1) provare a risolvere il problema con if()
 
-possibili eccezioni: provare a risolvere il problema con if()
 
+creare e gestire array di stringhe all'interno del codice sorgente
 
-gestire array di stringhe all'interno del codice sorgente
+--------------
 
+classi, struttura delle classi, progettazione delle classi in UML, stato interno, metodi costruttori, metodi getter e setter, incapsulamento, overload dei costruttori
 
 
 
