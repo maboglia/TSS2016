@@ -10,4 +10,11 @@ elenco allievi
 scorro elenco allievi utilizzando un ciclo for
 
 
-possibili eccezioni: risolvere il problema
+possibili eccezioni: provare a risolvere il problema con if()
+
+
+gestire array di stringhe all'interno del codice sorgente
+
+
+
+
