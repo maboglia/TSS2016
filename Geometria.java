@@ -23,6 +23,27 @@ public class Geometria {
 	
 	System.out.println("Punto 2");
 	System.out.print(mioPunto2.getX() + ", " + mioPunto2.getY());
+	
+	System.out.println();
+	System.out.println("-------------");
+	
+	Rettangolo mioRettang = new Rettangolo(7, 12);
+	
+	System.out.println("Area del rettangolo");
+	System.out.println(mioRettang.calcolaArea());
+
+	System.out.println("Perimetro del rettangolo");
+	System.out.println(mioRettang.calcolaPerimetro());
+
+	
+	Rettangolo mioRettang2 = new Rettangolo(6, 43);
+	
+	System.out.println("Area del rettangolo");
+	System.out.println(mioRettang2.calcolaArea());
+
+	System.out.println("Perimetro del rettangolo");
+	System.out.println(mioRettang2.calcolaPerimetro());
+
 		
 }
 	
