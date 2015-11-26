@@ -1,0 +1,13 @@
+Array
+
+vettori
+
+argomenti passati al metodo main
+
+elenco allievi
+
+
+scorro elenco allievi utilizzando un ciclo for
+
+
+possibili eccezioni: risolvere il problema
