@@ -139,7 +139,38 @@ public static void main(String[] args){
     System.out.println(absValue);
 
 
+//string e stringbuilder
 
+
+        String saluto = "Ciao";
+        String saluto2 = "Mondo";
+        String saluto3 = saluto + ", " + saluto2 + "!";
+
+        System.out.println(saluto3);
+
+
+        StringBuilder sb = new StringBuilder("Ciao")
+                .append(", ")
+                .append("Mondo")
+                .append("!");
+        System.out.println(sb);
+
+        //creo un elemento scanner di tipo scanner per catturare input utente
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("cosa dice denis");
+        String input = scanner.nextLine();
+        System.out.println("denis ha detto " + input);
+
+
+        //ricetta della pizza
+        System.out.println("devi comprare ingredienti per la pizza");
+        sb.delete(0, sb.length());
+        for (int i = 0; i < 5; i++) {
+            System.out.println("scrivi ingrediente" + i);
+            input = scanner.nextLine();
+            sb.append(input + "\n");
+        }
+        System.out.println(sb);
 
 }
 }
