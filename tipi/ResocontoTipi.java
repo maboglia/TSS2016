@@ -176,7 +176,7 @@ public static void main(String[] args){
 
         //variabile boolean esterna al metodo
         static boolean  bext;
-        
+
            //variabili locali
         boolean b1 = true;
         boolean b2 = false;
@@ -199,6 +199,34 @@ public static void main(String[] args){
         String strBool = "true";
         boolean stringa = Boolean.parseBoolean(strBool);
         System.out.println(stringa);
+
+//char
+
+        
+        char c1 = '1';
+        char c2 = '2';
+        char c3 = '3';
+
+        System.out.println("Char 1: " + c1);
+        System.out.println("Char 2: " + c2);
+        System.out.println("Char 3: " + c3);
+
+
+        char dollarSign = '\u0024';
+        System.out.println(dollarSign);
+        char yenSign = '\u00A5';
+        System.out.println(yenSign);
+
+
+        //classe wrapper
+
+        char a1 = 'a';
+        char a2 = 'b';
+        char a3 = 'c';
+
+        System.out.println(Character.toUpperCase(a1));
+        System.out.println(Character.toUpperCase(a2));
+        System.out.println(Character.toUpperCase(a3));
 
 
 
