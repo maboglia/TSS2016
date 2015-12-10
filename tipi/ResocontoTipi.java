@@ -175,6 +175,8 @@ public static void main(String[] args){
 //boolean
 
         //variabile boolean esterna al metodo
+        static boolean  bext;
+        
            //variabili locali
         boolean b1 = true;
         boolean b2 = false;
