@@ -202,7 +202,7 @@ public static void main(String[] args){
 
 //char
 
-        
+
         char c1 = '1';
         char c2 = '2';
         char c3 = '3';
