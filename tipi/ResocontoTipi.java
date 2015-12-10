@@ -172,5 +172,33 @@ public static void main(String[] args){
         }
         System.out.println(sb);
 
+//boolean
+
+        //variabile boolean esterna al metodo
+           //variabili locali
+        boolean b1 = true;
+        boolean b2 = false;
+
+        System.out.println("il valore di b1 è: " + b1);
+        System.out.println("il valore di b2 è: " + b2);
+        System.out.println("il valore di bext è: " + bext);
+
+        boolean b3 = !b1;
+        System.out.println("il valore di b3 è: " + b3);
+
+        int i1 = 1;
+        boolean b4 = (i1 != 0);
+
+        if (b4 == true) System.out.println("Benvenuto utente");
+        else if (b4 == false) System.out.println("non puoi accedere, riprova!");
+
+        System.out.println("il valore di b4 è: " + b4);
+
+        String strBool = "true";
+        boolean stringa = Boolean.parseBoolean(strBool);
+        System.out.println(stringa);
+
+
+
 }
 }
