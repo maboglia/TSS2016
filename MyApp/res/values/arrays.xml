@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="skill">
+        <item>Java J2SE</item>
+        <item>Java JSP</item>
+        <item>Java GUI</item>
+        <item>Android</item>
+        <item>JavaScript/JQuery</item>
+        <item>JSON/XML</item>
+        <item>PHP</item>
+        <item>SQL/MySql</item>
+        <item>HTML5</item>
+        <item>CSS3</item>
+        <item>WordPress</item>
+        <item>Cisco</item>
+        <item>Bootstrap</item>
+    </string-array>
+
+    <string-array name="allievi">
+        <item>russo</item>
+        <item>dulanto</item>
+        <item>rea</item>
+        <item>soave</item>
+        <item>cimino</item>
+        <item>spandre</item>
+        <item>scarcia</item>
+        <item>calessi</item>
+        <item>kodra</item>
+        <item>franze</item>
+        <item>solia</item>
+        <item>migliaccio</item>
+        <item>sontacchi</item>
+    </string-array>
+
+
+    <string-array name="attivita">
+        <!--<item>SplashScreen</item>-->
+        <item>HomePage</item>
+        <item>ElencoAllievi</item>
+        <item>Griglia</item>
+        <item>LanciaDadi</item>
+        <item>Login</item>
+        <item>About</item>
+        <item>MyBrowser</item>
+        <item>LinearLayoutActivity</item>
+        <item>MostraFacce</item>
+        <item>GiustaDecisione</item>
+        <item>Skill</item>
+        <item>Utilita</item>
+        <item>Provola</item>
+
+        <!-- <item>Dialoghi</item>
+        <item>Azioni</item>
+        <item>Animazioni</item>
+        <item>CounterGallery</item>
+        <item>MyBrowser</item>
+        <item>ListaActivity</item>
+        <item>Musica</item> -->
+
+    </string-array>
+
+    <string-array name="itemAttivita">
+
+        <!--<item>SplashScreen</item>-->
+        <item>Home Page</item>
+        <item>Elenco Allievi</item>
+        <item>Griglia Allievi</item>
+        <item>Gioco Lancia Dadi</item>
+        <item>Esempio Login</item>
+        <item>About Me (WebView)</item>
+        <item>BrowserWeb</item>
+        <item>LinearLayoutActivity</item>
+        <item>MostraFacce</item>
+        <item>GiustaDecisione</item>
+        <item>Skill</item>
+        <item>Utilita</item>
+        <item>Provola</item>
+        <!--         <item>Mostra Dialoghi</item>
+                <item>Mostra Azioni</item>
+                <item>Mostra Animazioni</item>
+                <item>Scorri le immagini</item>
+                <item>Il Mio Browser</item>
+                <item>Vedi Activity come ListActivity</item>
+                <item>Player Musicale</item>
+         -->
+    </string-array>
+
+
+    <integer-array name="foto">
+        <item>@drawable/a_russo</item>
+        <item>@drawable/a_dulanto</item>
+        <item>@drawable/a_rea</item>
+        <item>@drawable/a_soave</item>
+        <item>@drawable/a_cimino</item>
+        <item>@drawable/a_spandre</item>
+        <item>@drawable/a_scarcia</item>
+        <item>@drawable/a_calessi</item>
+        <item>@drawable/a_kodra</item>
+        <item>@drawable/a_franze</item>
+        <item>@drawable/a_solia</item>
+        <item>@drawable/a_migliaccio</item>
+        <item>@drawable/a_sontacchi</item>
+
+    </integer-array>
+
+
+</resources>
