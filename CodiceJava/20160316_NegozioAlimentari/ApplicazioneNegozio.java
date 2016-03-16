@@ -19,14 +19,14 @@ public class ApplicazioneNegozio
         cassa.aggiungiProdotto("C00006", "Acqua Chiara", 0.4);
 
         // Sconto del 20% per il latte
-        cassa.promozione("C00002", 20);
+        cassa.promozione("C00000", 20);
 
         try{
-            cassa.leggi("C00002",6);
+            cassa.leggi("C00006",6);
             cassa.leggi("C00001",5);
             cassa.leggi("C00004",5);
             cassa.leggi("C00003",2);
-            cassa.leggi("C00006",9);
+            cassa.leggi("C00002",9);
             cassa.leggi("C00005",1);
         }catch(Exception e){
             System.out.println(e.getMessage());
