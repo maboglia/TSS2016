@@ -1,4 +1,3 @@
-
 <%@page contentType="text/html" import="java.util.Date, java.util.Locale, java.text.NumberFormat, myShop.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,6 +61,13 @@
         <%@include file="sql.jsp" %>
         
         <%
+            
+            String stampaFlag=request.getParameter("stampa");
+            
+            if(stampaFlag==null)
+                stampaFlag="2";
+            
+            
             Carrello carrello=null;
             
             if(session.getValue("myShop.carrello")==null){
@@ -73,6 +79,9 @@
             
             
             int qtProdotto = 0;
+            
+            //arrivi dalla pagina prodotti
+            if(!(stampaFlag.equals("1"))){
             
             String idProdotto=request.getParameter("pid");
             
@@ -115,9 +124,32 @@
             
             }
             
+            }  
+            //fine stampaFlag != 1
             
+        boolean carrelloVuoto = carrello.Vuoto();
         
         %>
+        
+        
+        <%
+        
+        
+        if(qtProdotto <= 0  && !stampaFlag.equals("1")){
+        
+                out.println("<h3>Devi inserire un numero intero positivo</h3>");
+            
+        }
+        else {
+            if(carrelloVuoto){
+                    out.println("<h3>il tuo carrello è vuoto!!</h3>");
+            }
+            else{
+        %>
+        
+        
+        
+                 
         
         <table class="table">
 
@@ -135,7 +167,7 @@
             
             ProdottoSelezionato ps = carrello.TrovaProdotto(i);
                     
-        %>
+        %>                         
             <tr>
                 
                 <td><%= ps.nome %></td>
@@ -143,15 +175,16 @@
                 <td><%= fmt.format(ps.prezzo) %></td>
                 <td>
                     <form method="post" action="aggiorna.jsp">
-                        <input type="hidden" name="pid" value="<%= ps.id %>" />
+                        <input type="hidden" name="id" value="<%= ps.id %>" />
+                        <input type="hidden" name="righe" value="<%= i %>" />
                         <input type="number" name="qt" value="<%= ps.quantitaSelezionata %>" />
                         <input type="submit" name="ordina" value="buy"/>
+                    </form>
                 
                 </td>
                 <td><%= fmt.format(ps.prezzo * ps.quantitaSelezionata) %></td>
                 <td><a href="elimina.jsp?id=<%= ps.id %>">Elimina</a></td>
                 
-                </form>
             </tr>
         
 
@@ -173,6 +206,12 @@
 
             </form>
         </div>
+        
+        <%
+        
+            }
+        }
+        %>
         
         <footer class="row" id="footer">
             <%@include file="footer.jsp" %>
