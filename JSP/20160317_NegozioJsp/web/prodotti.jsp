@@ -10,8 +10,7 @@
                 <th>Prodotto</th>
                 <th>Descrizione</th>
                 <th>Prezzo</th>
-                <th>Qta</th>
-                <th>Buy</th>
+                <th>Qty &amp; Buy</th>
             
             </tr>
     
@@ -32,11 +31,12 @@
                 <td><%= r.getString(3)%></td>
                 <td><%= r.getFloat(4)%></td>
                 <td>
-                    <input type="number" name="qt" value="1" />
-                    <input type="hidden" name="pid" value="<%= r.getInt(1)%>" />
+                    <form method="post" action="inserisci.jsp">
+                        <input type="hidden" name="pid" value="<%= r.getInt(1)%>" />
+                        <input type="number" name="qt" value="1" />
+                        <input type="submit" name="ordina" value="buy"/>
+                    </form>
                 </td>
-                <td><input type="submit" name="ordina" value="buy"/></td>
-            
             </tr>
   
       
