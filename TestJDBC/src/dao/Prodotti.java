@@ -15,7 +15,7 @@ public class Prodotti extends BaseDAO{
 	private String prodotto = null;
 	private int idFornitore;
 	
-	
+	public Prodotti(){}
 	public int getIdProdotto() {
 		return idProdotto;
 	}
@@ -32,11 +32,10 @@ public class Prodotti extends BaseDAO{
 
 
 
-	Connection conn = null;
 	
 
 	public Prodotti(String prodotto){
-		
+	
 		this.prodotto = prodotto;
 	}
 
